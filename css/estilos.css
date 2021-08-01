@@ -1,0 +1,661 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'PT Sans', sans-serif;
+    }
+    
+    body {
+        font-family: 'PT Sans', sans-serif;
+    }
+    /* INDEX */
+    
+    .contenedorFoto {
+        background-image: url("../img/headerbackground2.jpg");
+        background-size: cover;
+        height: 700px;
+    }
+    
+    .contenedorh1Index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .h1Index {
+        font-size: 170%;
+        font-weight: bold;
+        color: white;
+        border: 1px solid white;
+        margin: 5%;
+        padding: 3%;
+        text-transform: uppercase;
+    }
+    
+    .parrafoIndex {
+        color: white;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .contenedorSelect {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedorDestinoSoñado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenedorDestinoSoñado input {
+        margin: 1%;
+    }
+    
+    .contenedorDestinoSoñado p {
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    .contenedorDestinoSoñado button {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1rem;
+        padding: 2%;
+        color: white;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid white;
+        width: 100px;
+    }
+    
+    .h3destinoEnviado {
+        color: white;
+        font-weight: bold;
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        .contenedorSelect {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        select {
+            width: 50%;
+        }
+    }
+    
+    .contenedorBuscar {
+        background-color: black;
+        background-image: url("../img/fondoparacontenedor.jpg");
+        background-position: center;
+        background-size: cover;
+        opacity: .8;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .buscar {
+        margin: 5%;
+        padding: 2%;
+        font-size: 1rem;
+        /* border-radius: 30px; */
+    }
+    
+    .contenedorButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #btnBuscar {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1rem;
+        margin: 2% 5% 2% 0;
+        padding: 2%;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: transparent;
+        border: 1px solid white;
+        width: 170px;
+        cursor: pointer;
+    }
+    
+    #btnBuscar:hover {
+        font-size: 1.1rem;
+        color: cadetblue;
+        border: 2px solid cadetblue;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .parrafoIndex {
+            margin: 5%;
+        }
+        .contenedorh1Index {
+            text-align: center;
+            margin: 5%;
+        }
+    }
+    
+    #resumen {
+        margin: 10px;
+    }
+    
+    .parrafoSeleccion {
+        font-size: 1.3rem;
+        color: black;
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    
+    .parrafoSeleccionVacio {
+        font-size: 1.3rem;
+        color: black;
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    
+    .colorAzul {
+        text-transform: uppercase;
+        color: #023E73;
+        font-weight: 800;
+    }
+    
+    .btnPaquetesDisponibles {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    /* NAVBAR */
+    
+    .barra {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+    
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+    }
+    
+    .navegacion a {
+        margin: 4%;
+        text-align: end;
+        color: white;
+        text-decoration: none;
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        .barra {
+            padding: 3% 3%;
+            margin: 0;
+            display: flex;
+            flex-direction: space-beetwen;
+        }
+        .navegacion {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .navegacion a {
+            font-size: 1.5rem;
+            margin: 2%;
+            padding: 2%;
+        }
+        .navegacion a:hover {
+            color: darkslateblue;
+            transition: .5s;
+        }
+    }
+    /* SECCION */
+    
+    .tituloSeccionIndex {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    .contenedorSeccion {
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contenedorMini {
+        margin: 4%;
+    }
+    
+    .contenedorMini h3 {
+        text-transform: uppercase;
+        padding: 2%;
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        .contenedorSeccion {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .contenedorMini {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contenedorMini p {
+            text-align: center;
+        }
+        .contenedorMini h3 {
+            padding: 2%;
+        }
+    }
+    /* Contacto Imagen */
+    
+    .imagenContacto {
+        background-image: url("../img/contactofondo.jpg");
+        background-position: center center;
+        background-size: cover;
+        height: 20rem;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .contenidoContacto {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin: 4% 0 0 4%;
+    }
+    
+    .contenidoContacto p {
+        font-weight: 700;
+        margin: 4% 0;
+    }
+    
+    #btnBuscar2 {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1rem;
+        margin: 2% 5% 2% 0;
+        padding: 2%;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: transparent;
+        border: 1px solid white;
+        width: 170px;
+        cursor: pointer;
+    }
+    
+    #btnBuscar2:hover {
+        color: #c78f30;
+        border: 2px solid #c78f30;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .contenidoContacto {
+            margin: 4%;
+        }
+        .contenidoContacto p {
+            margin: 4% 0;
+        }
+    }
+    /* FOOTER */
+    
+    footer {
+        background-color: #023E73;
+        /* height: 150px; */
+        margin: 2% 0 0 0;
+    }
+    
+    .imagenRedes {
+        width: 20px;
+        margin: 5%;
+    }
+    
+    .logo {
+        height: 100px;
+    }
+    
+    .contenedorRedes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 2% 0 2%;
+    }
+    
+    .enlaceRedes {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .enlaceRedes:hover {
+        color: #c78f30;
+        transition: .5s;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .contenedorRedes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3%;
+        }
+        .enlaceRedes {
+            display: flex;
+            align-items: center;
+        }
+    }
+    /* HEADER - SECCIONES */
+    
+    header {
+        background-color: #023E73;
+    }
+    /* PAQUETES */
+    
+    @media only screen and (min-width: 1000px) {
+        #contenedorPaquetes {
+            font-family: 'PT Sans', sans-serif;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr; */
+            align-items: center;
+            justify-items: center;
+        }
+        .p1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .p2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .p3 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .resumenPQT {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .p4 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .p5 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .p6 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    }
+    
+    #contenedorPaquetes .contenedor {
+        border: 1px solid black;
+        padding: 5%;
+        margin: 5%;
+    }
+    
+    .botonPaquetes {
+        padding: 1% 2%;
+        margin: 2%;
+    }
+    
+    .botonPaquetes:hover {
+        cursor: pointer;
+    }
+    
+    .h4Paquetes {
+        font-size: 1.2rem;
+    }
+    
+    .h3Paquetes {
+        font-size: 1.5rem;
+        margin: 5%;
+    }
+    
+    .parrafoPaquetes {
+        padding: 5%;
+    }
+    
+    .imgPaquetes {
+        padding: 2% 0;
+    }
+    
+    .subSelect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .infopqt1,
+    .infopqt2,
+    .infopqt3,
+    .infopqt4,
+    .infopqt5,
+    .infopqt6 {
+        border: solid 1px #023E73;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3%;
+        padding: 1%;
+        text-align: center;
+    }
+    /* FORMULARIO */
+    
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    label,
+    input,
+    textarea {
+        padding: 3%;
+    }
+    
+    #btnEnviarContacto {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1rem;
+        margin: 4% 5% 2% 0;
+        padding: 2%;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid black;
+        width: 100px;
+    }
+    
+    #btnEnviarContacto:hover {
+        cursor: pointer;
+    }
+    
+    .tituloSecciones {
+        color: #023e73;
+        border: 1px solid #023e73;
+        text-align: center;
+        margin: 2%;
+        padding: 2%;
+    }
+    
+    .h3Form,
+    .parrafoForm {
+        font-family: 'PT Sans', sans-serif;
+        text-align: center;
+    }
+    
+    #contenedorPaquetes img {
+        border-radius: 10%;
+    }
+    
+    .inputIncompleto {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 800;
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        .tituloSecciones {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        label,
+        input,
+        textarea {
+            padding: 2%;
+            width: 50%;
+        }
+        #btnEnviarContacto {
+            width: 200px;
+            padding: 1.5%;
+        }
+        .contenedorInput {
+            border-top: 2px solid red;
+            padding-top: 2%;
+        }
+    }
+    /* HOTELES */
+    
+    .hotelesContenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btnHoteles {
+        color: white;
+        background-color: #023e73;
+        padding: 2%;
+        margin: 1%;
+    }
+    
+    .btnOpciones {
+        border: 1px solid #023e73;
+        padding: 1%;
+    }
+    
+    .botonera {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1%;
+    }
+    /* .imgHoteles {
+        width: 350px;
+        height: 250px;
+        text-align: center;
+        margin: 2%;
+    }
+    
+    .hotelesContenedor {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .h3Hoteles {
+        font-size: 1.5rem;
+        margin: 2%;
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        .hotelesContenedor {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+        }
+        .subContenedorHoteles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 500px;
+            width: 350px;
+            text-align: center;
+        }
+        .parrafoHoteles {
+            margin: 2%;
+        }
+    } */
+    /* NOSOTROS */
+    
+    .subTituloSecciones {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #023e73;
+        border: 1px solid #023e73;
+        padding: 2%;
+    }
+    
+    .parrafoNosotros {
+        text-align: center;
+    }
+    
+    .imgNosotros {
+        margin: 2%;
+        width: 95%;
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        .contenedorNosotros {
+            display: flex;
+        }
+        .contenedorParaFlex {
+            margin: 2%;
+        }
+        .imgNosotros {
+            height: 800px;
+            margin: 2.5%;
+            border-radius: 2%;
+        }
+        .parrafoNosotros {
+            margin: 8%;
+        }
+    }

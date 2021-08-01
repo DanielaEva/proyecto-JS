@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title> Hoteles </title>
+</head>
+
+<body>
+    <header>
+        <div class="barra">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="Logo" class="logo">
+            </a>
+
+
+            <nav class="navegacion">
+                <a href="nosotros.html"> Nosotros </a>
+                <a href="hoteles.html"> Hoteles </a>
+                <a href="paquetes.html"> Paquetes </a>
+                <a href="contacto.html"> Contacto </a>
+            </nav>
+        </div>
+    </header>
+
+    <h2 class="tituloSecciones"> Hoteles </h2>
+
+    <main class="hotelesContenedor">
+        <!-- LA COSTA -->
+        <button class="btnHotel1 btnHoteles"> Partido de La Costa </button>
+        <div class="botonera1 botonera" style="display: none">
+            <button class="btnOpciones opcion1"> Media Pensión</button>
+            <button class="btnOpciones opcion2">Pensión Completa</button>
+        </div>
+        <div class="modal" tabindex="-1" id="laCosta1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Partido de La Costa - Hotel 1</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelmdp1.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 3 Estrellas </p>
+                        <p> · Incluye: Desayuno - Cena </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion1"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" id="laCosta2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Partido de La Costa - Hotel 2</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelpinamar.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 5 Estrellas </p>
+                        <p> · Incluye: Desayuno - Almuerzo - Cena </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion2"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENDOZA -->
+        <button class="btnHoteles btnHotel2"> Mendoza </button>
+        <div class="botonera2 botonera" style="display: none">
+            <button class="btnOpciones opcion3"> Media Pensión</button>
+            <button class="btnOpciones opcion4"> Pensión Completa </button>
+        </div>
+        <div class="modal" tabindex="-1" id="mendoza1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Mendoza - Hotel 1</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelmendoza1.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 3 Estrellas </p>
+                        <p> · Incluye: Desayuno - Cena </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion3"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" id="mendoza2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Mendoza - Hotel 2</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelmendoza2.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 5 Estrellas </p>
+                        <p> · Incluye Desayuno - Almuerzo - Cena </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion4"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CÓRDOBA -->
+
+        <button class="btnHoteles btnHotel3"> Córdoba </button>
+        <div class="botonera3 botonera" style="display: none">
+            <button class="btnOpciones opcion5"> Media Pensión</button>
+            <button class="btnOpciones opcion6"> All Inclusive </button>
+        </div>
+        <div class="modal" tabindex="-1" id="cordoba1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Córdoba - Hotel 1</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelcordoba1.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 3 Estrellas </p>
+                        <p> · Incluye: Desayuno - Cena</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion5"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" id="cordoba2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Córdoba - Hotel 2</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelcordoba2.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 5 Estrellas </p>
+                        <p> · All Inclusive </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion6"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BARILOCHE -->
+        <button class="btnHoteles btnHotel4"> Bariloche </button>
+        <div class="botonera4 botonera" style="display: none">
+            <button class="btnOpciones opcion7"> Media Pensión</button>
+            <button class="btnOpciones opcion8"> Pensión Completa </button>
+        </div>
+        <div class="modal" tabindex="-1" id="bariloche1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Bariloche - Hotel 1</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelbariloche1.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 3 Estrellas </p>
+                        <p> · Incluye: Desayuno - Cena</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion7"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" id="bariloche2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Bariloche - Hotel 2</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelbariloche2.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 4 Estrellas </p>
+                        <p> · Incluye Desayuno - Almuerzo - Cena </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion8"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NORTE ARGENTINO -->
+        <button class="btnHoteles btnHotel5"> Norte Argentino </button>
+        <div class="botonera5 botonera" style="display: none">
+            <button class="btnOpciones opcion9"> Media Pensión - Opción 1</button>
+            <button class="btnOpciones opcion10"> Media Pensión - Opción 2 </button>
+        </div>
+        <div class="modal" tabindex="-1" id="norte1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Norte Argentino - Hotel 1</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelnorte1.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 2 Estrellas </p>
+                        <p> · Incluye: Desayuno - Cena </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion9"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" id="norte2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Norte Argentino - Hotel 2</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/hotelnorte2.jpg" alt="" style="width: 100%;">
+                        <p> </p>
+                        <p> · Hotel 5 Estrellas </p>
+                        <p> · Incluye: Desayuno - Almuerzo - Cena </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary accion10"> Ok </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CALAFATE / USHUAIA -->
+        <button class="btnHoteles btnHotel6"> Calafate / Ushuaia </button>
+        <div class="botonera6 botonera" style="display: none">
+            <button class="btnOpciones opcion11"> Media Pensión </button>
+            <button class="btnOpciones opcion12"> Pensión Completa</button>
+            <div class="modal" tabindex="-1" id="calafate1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"> Calafate - Hotel 1</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/hotelcalafate1.jpg" alt="" style="width: 100%;">
+                            <p> </p>
+                            <p> · Hotel 2 Estrellas </p>
+                            <p> · Incluye: Desayuno </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary accion11"> Ok </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" id="calafate2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"> Calafate - Hotel 2</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/hotelcalafate2.jpg" alt="" style="width: 100%;">
+                            <p> </p>
+                            <p> · Hotel 5 Estrellas </p>
+                            <p> · Incluye: Desayuno </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary accion12"> Ok </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="contenedorRedes">
+            <div class="padreEnlaces">
+                <a href="" class="enlaceRedes">
+                    <img src="img/whatsapp.png" alt="" class="imagenRedes">
+                    <p class="parrafoRedes"> Whatsapp</p>
+                </a>
+                <a href="" class="enlaceRedes">
+                    <img src="img/instagram.png" alt="" class="imagenRedes">
+                    <p class="parrafoRedes"> Instagram</p>
+                </a>
+                <a href="" class="enlaceRedes">
+                    <img src="img/facebook.png" alt="" class="imagenRedes">
+                    <p class="parrafoRedes"> Facebook</p>
+                </a>
+                <a href="" class="enlaceRedes">
+                    <img src="img/gmail.png" alt="" class="imagenRedes">
+                    <p class="parrafoRedes"> Gmail</p>
+                </a>
+            </div>
+            <img src="./img/logo.png" alt="Logo" class="logo">
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/hoteles.js"></script>
+</body>
+
+</html>
